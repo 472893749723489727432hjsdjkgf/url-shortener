@@ -1,0 +1,73 @@
+/* Центрируем контейнер на странице */
+.AppDisplay {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Поле ввода */
+.AppDisplay input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Чтобы padding не раздувал ширину */
+    transition: border-color 0.3s ease;
+}
+
+.AppDisplay input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Кнопка */
+.AppDisplay button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s active;
+}
+
+.AppDisplay button:hover {
+    background-color: #0056b3;
+}
+
+.AppDisplay button:active {
+    transform: scale(0.98);
+}
+
+/* Блок с результатом */
+.AppDisplay p {
+    margin-top: 20px;
+    color: #333;
+    word-break: break-all; /* Чтобы длинные ссылки не вылезали за края */
+}
+
+.AppDisplay strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Стилизация текста результата, если он есть */
+.AppDisplay span {
+    display: inline-block;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    color: #007bff;
+    font-weight: 500;
+}
