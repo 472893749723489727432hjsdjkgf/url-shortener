@@ -22,4 +22,4 @@ async def check_slug(slug : str) -> bool:
         req = await conn.execute(stmt)
         return req.scalar()
 
-
+"""crud_db"""

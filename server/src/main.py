@@ -7,11 +7,10 @@ import uvicorn
 
 
 
-
 @asynccontextmanager
 async def lifespan(app : FastAPI):
     await init_tables()
-    print("БД СОЗДАНА!")
+    print("ТАБЛИЦЫ СОЗДАНЫ!")
     yield
 
 app = FastAPI(lifespan=lifespan)
